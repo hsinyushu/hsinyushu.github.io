@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700');
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 23px;
+}
+
+nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 12px;
+    background-color: rgba(232, 232, 232, 0.8);
+    color: #555;
+    margin: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background-color: aqua;
+    color: white;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav .nav-brand {
+    float: left;
+    font-weight: 700;
+}
+
+nav .nav-brand a:hover {
+    color: #F05F40;
+}
+
+nav .nav-list {
+    float: right;
+}
+
+nav .nav-list>ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-list>ul>li {
+    float: right;
+    margin: 0;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+nav .nav-list>ul>li>a:hover {
+    color: #F05F40;
+}
+
+nav .nav-list>ul>li:first-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width:767px) {
+    header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 15px;
+    }
+    nav {
+        padding-top: 10px;
+    }
+    nav .nav-brand a {
+        font-size: 20px;
+    }
+    nav .nav-list {
+        display: none;
+    }
+    nav .nav-menu-btn {
+        width: 36px;
+        height: 36px;
+        border: 1px solid #333;
+        float: right;
+        position: relative;
+        border-radius: 3px;
+        top: 0px;
+        cursor: pointer;
+    }
+    nav .nav-menu-btn:after,
+    nav .nav-menu-btn:before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: #333;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    nav .nav-menu-btn:after {
+        top: 12px;
+    }
+    nav .nav-menu-btn:before {
+        top: 17px;
+        box-shadow: 0 5px 0 #333;
+    }
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/ghome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: table;
+}
+
+header .header-content {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    text-align: center;
+}
+
+header .header-content h1,
+header .header-content p {
+    color: whitesmoke;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.jumbotron#gperson-page {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/Carousel/gperson.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.jumbotron#glife-page {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/Carousel/glife.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.jumbotron#gfood-page {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/Carousel/gfood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.jumbotron {
+    background-color: #63a541;
+}
+
+.jumbotron * {
+    color: white;
+    text-align: center;
+}

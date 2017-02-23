@@ -1,0 +1,122 @@
+@charset "UTF-8";
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* 取消元件間距 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+article,
+section,
+div,
+nav,
+aside,
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 取消水平滑動 */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* 取消body邊界距離的設定 */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 取消a標籤預設會存在的底線 */
+
+a,
+a:hover,
+a:visited,
+a:focus {
+    text-decoration: none;
+}
+
+
+/* 取消按鈕focus的模糊藍邊 */
+
+button:focus {
+    outline: none;
+}
+
+
+/* 排版用的幫手 */
+
+.clear-float {
+    clear: both;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+
+/* 文字設定 */
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+
+/* 縮圖設定 */
+
+.thumbnail {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.thubnail img {
+    width: 100%;
+}
+
+
+/* 導覽列設定 */
+
+nav li>ul {
+    display: none;
+}
+
+nav li:hover>ul {
+    display: block;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
